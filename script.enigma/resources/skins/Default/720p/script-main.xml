@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <window>
-	<defaultcontrol>9000</defaultcontrol>
+	<defaultcontrol>8000</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -31,19 +31,115 @@
 
 			</control>
 			
-			<control type="image" id="5555">
+			<control type="button" id="5555">
 				<description>Search image</description>
+				<ondown>8000</ondown>
 				<posx>1100</posx>
 				<posy>30</posy>
-				<width>70</width>
+				<width>50</width>
 				<height>50</height>
 				<visible>true</visible>
 				<fadetime>200</fadetime>
-				<texture>search_icon.png</texture>
+				<texturefocus>search_icon_glow.png</texturefocus>
+				<texturenofocus>search_icon.png</texturenofocus>
 				<aspectratio>keep</aspectratio>
 			</control>
+						
+			<control type="button" id="8000">
+				<onright>8001</onright>
+				<onup>5555</onup>
+				<left>50</left>
+				<top>200</top>
+				<width>225</width>
+				<height>400</height>
+				<texturefocus>movie_image.png</texturefocus>
+				<texturenofocus>movie_image.png</texturenofocus>
+				<animation effect="zoom" end="120" center="360,360" time="200">Focus</animation>
+				<font>font28_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>307</textoffsety>
+				<label>Movie</label>
+			</control>
 			
-			<control type="fixedlist" id="9000">
+			<control type="button" id="8001">
+				<onright>8002</onright>
+				<onleft>8000</onleft>
+				<onup>5555</onup>
+				<left>275</left>
+				<top>200</top>
+				<width>225</width>
+				<height>400</height>
+				<texturefocus>tvshow_image.png</texturefocus>
+				<texturenofocus>tvshow_image.png</texturenofocus>
+				<animation effect="zoom" end="120" center="460,360" time="200">Focus</animation>
+				<font>font28_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>307</textoffsety>
+				<label>TV Shows</label>
+			</control>
+			
+			<control type="button" id="8002">
+				<onright>8003</onright>
+				<onleft>8001</onleft>
+				<onup>5555</onup>
+				<left>500</left>
+				<top>200</top>
+				<width>225</width>
+				<height>400</height>
+				<texturefocus>livetv_image.png</texturefocus>
+				<texturenofocus>livetv_image.png</texturenofocus>
+				<animation effect="zoom" end="120" center="680,360" time="200">Focus</animation>
+				<font>font28_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>307</textoffsety>
+				<label>Live TV</label>
+			</control>
+			
+			<control type="button" id="8003">
+				<onright>8004</onright>
+				<onleft>8002</onleft>
+				<onup>5555</onup>
+				<left>725</left>
+				<top>200</top>
+				<width>225</width>
+				<height>400</height>
+				<texturefocus>music_image.png</texturefocus>
+				<texturenofocus>music_image.png</texturenofocus>
+				<animation effect="zoom" end="120" center="890,360" time="200">Focus</animation>
+				<font>font28_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>307</textoffsety>
+				<label>Music</label>
+			</control>
+			
+			<control type="button" id="8004">
+				<onright>8005</onright>
+				<onleft>8003</onleft>
+				<onup>5555</onup>
+				<left>950</left>
+				<top>200</top>
+				<width>225</width>
+				<height>400</height>
+				<texturefocus>setting_image.png</texturefocus>
+				<texturenofocus>setting_image.png</texturenofocus>
+				<animation effect="zoom" end="120" center="1020,360" time="200">Focus</animation>
+				<font>font28_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>307</textoffsety>
+				<label>Settings</label>
+			</control>
+			
+			<!--<control type="fixedlist" id="9000">
 				<left>-300</left>
 				<top>500</top>
 				<width>1900</width>
@@ -53,11 +149,11 @@
 				<ondown>9000</ondown>
 				<visible>true</visible>
 				<pagecontrol>-</pagecontrol>
-				<!--<scrolltime>300</scrolltime>-->
+				
 				<focusposition>2</focusposition>
 				<movement>1</movement>
 				<orientation>horizontal</orientation>
-				<itemlayout height="20" width="200">
+				<itemlayout height="400" width="325">
 					<control type="label">
 						<left>150</left>
 						<top>0</top>
@@ -70,14 +166,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="20" width="200">
-					<control type="image">
-						<left>130</left>
-						<top>0</top>
-						<width>100</width>
-						<height>22</height>
-						<texture>orange_box.png</texture>
-					</control>
+				<focusedlayout height="400" width="325">
 					<control type="label">
 						<left>150</left>
 						<top>0</top>
@@ -153,7 +242,7 @@
 						<visible>True</visible>
 					</item>
 				</content>
-			</control>
+			</control>-->
 			
 		</control>
 	</controls>
