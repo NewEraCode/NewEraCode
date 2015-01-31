@@ -54,12 +54,14 @@
 				<height>400</height>
 				<texturefocus>movie_image.png</texturefocus>
 				<texturenofocus>movie_image.png</texturenofocus>
-				<animation effect="zoom" end="120" center="360,360" time="200">Focus</animation>
-				<font>font28_title</font>
+				<animation effect="zoom" end="120" center="275,360" time="200">Focus</animation>
+				<font>font24_title</font>
 				<textcolor>white</textcolor>
+				<shadowcolor>ff000000</shadowcolor>
 				<align>center</align>
 				<aligny>top</aligny>
 				<textoffsety>307</textoffsety>
+				<!--<onclick></onclick>-->
 				<label>Movie</label>
 			</control>
 			
@@ -74,8 +76,9 @@
 				<texturefocus>tvshow_image.png</texturefocus>
 				<texturenofocus>tvshow_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="460,360" time="200">Focus</animation>
-				<font>font28_title</font>
+				<font>font24_title</font>
 				<textcolor>white</textcolor>
+				<shadowcolor>ff000000</shadowcolor>
 				<align>center</align>
 				<aligny>top</aligny>
 				<textoffsety>307</textoffsety>
@@ -93,7 +96,8 @@
 				<texturefocus>livetv_image.png</texturefocus>
 				<texturenofocus>livetv_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="680,360" time="200">Focus</animation>
-				<font>font28_title</font>
+				<font>font24_title</font>
+				<shadowcolor>ff000000</shadowcolor>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -112,7 +116,8 @@
 				<texturefocus>music_image.png</texturefocus>
 				<texturenofocus>music_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="890,360" time="200">Focus</animation>
-				<font>font28_title</font>
+				<font>font24_title</font>
+				<shadowcolor>ff000000</shadowcolor>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -131,7 +136,8 @@
 				<texturefocus>setting_image.png</texturefocus>
 				<texturenofocus>setting_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="1020,360" time="200">Focus</animation>
-				<font>font28_title</font>
+				<font>font24_title</font>
+				<shadowcolor>ff000000</shadowcolor>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>

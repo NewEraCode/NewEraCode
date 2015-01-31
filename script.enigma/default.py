@@ -94,14 +94,34 @@ class Main_Menu(xbmcgui.WindowXML):
 		if action == ACTION_CONTEXT_MENU:
 			self.doMenu()
 		elif action == ACTION_SELECT_ITEM:
-			if self.getFocusId() == 700:
-				print "##################################################################"
+			if self.getFocusId() == 8000:
+                                w = Main_Menu("script-movies.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 8001:
+                                w = Main_Menu("script-tvshows.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 8002:
+                                w = Main_Menu("script-livetv.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 8003:
+                                w = Main_Menu("script-music.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 8004:
+                                w = Main_Menu("script-settings.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+				
 			elif self.getFocusId() == 201:
 				self.addFromLibrary()
 			elif self.getFocusId() == 202:
 				self.openSettings()
 			else:
-				self.eplist()
+				print "##################################################################"
+				
 		elif action == ACTION_PARENT_DIR:
 			action = ACTION_PREVIOUS_MENU
 		elif action == ACTION_MOUSE_LEFT_CLICK:
