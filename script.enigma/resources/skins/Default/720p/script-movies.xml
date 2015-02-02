@@ -48,40 +48,80 @@
 			<control type="button" id="9000">
 				<onright>9001</onright>
 				<onup>5555</onup>
-				<left>200</left>
+				<left>50</left>
 				<top>200</top>
-				<width>100</width>
-				<height>100</height>
+				<width>250</width>
+				<height>300</height>
 				<texturefocus>primewire.png</texturefocus>
 				<texturenofocus>primewire.png</texturenofocus>
-				<animation effect="zoom" end="120" center="360,360" time="200">Focus</animation>
+				<animation effect="zoom" end="120" center="310,360" time="200">Focus</animation>
 				<font>font10_title</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textoffsety>115</textoffsety>
+				<textoffsety>120</textoffsety>
 				<!--<onclick></onclick>-->
 				<label>Primewire Indexer</label>
 			</control>
 			
 			<control type="button" id="9001">
-				<onright>9001</onright>
+				<onright>9002</onright>
 				<onleft>9000</onleft>
 				<onup>5555</onup>
-				<left>310</left>
+				<left>290</left>
 				<top>200</top>
-				<width>100</width>
-				<height>100</height>
+				<width>250</width>
+				<height>300</height>
 				<texturefocus>icefilms.png</texturefocus>
 				<texturenofocus>icefilms.png</texturenofocus>
-				<animation effect="zoom" end="120" center="360,360" time="200">Focus</animation>
+				<animation effect="zoom" end="120" center="480,360" time="200">Focus</animation>
 				<font>font10_title</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textoffsety>115</textoffsety>
+				<textoffsety>120</textoffsety>
 				<!--<onclick></onclick>-->
 				<label>Icefilms Indexer</label>
+			</control>
+			
+			<control type="button" id="9002">
+				<onright>9003</onright>
+				<onleft>9001</onleft>
+				<onup>5555</onup>
+				<left>530</left>
+				<top>200</top>
+				<width>250</width>
+				<height>300</height>
+				<texturefocus>IMDB.png</texturefocus>
+				<texturenofocus>IMDB.png</texturenofocus>
+				<animation effect="zoom" end="120" center="720,360" time="200">Focus</animation>
+				<font>font10_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>120</textoffsety>
+				<!--<onclick></onclick>-->
+				<label>IMDB Indexer</label>
+			</control>
+			
+			<control type="button" id="9003">
+				<onright>9004</onright>
+				<onleft>9002</onleft>
+				<onup>5555</onup>
+				<left>770</left>
+				<top>200</top>
+				<width>250</width>
+				<height>300</height>
+				<texturefocus>trakt.png</texturefocus>
+				<texturenofocus>trakt.png</texturenofocus>
+				<animation effect="zoom" end="120" center="720,360" time="200">Focus</animation>
+				<font>font10_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>120</textoffsety>
+				<!--<onclick></onclick>-->
+				<label>TRAKT Indexer</label>
 			</control>
 			
 		</control>
