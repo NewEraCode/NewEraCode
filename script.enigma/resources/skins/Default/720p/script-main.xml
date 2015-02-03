@@ -28,121 +28,139 @@
 				<width>234</width>
 				<height>80</height>
 				<texture>enigma_logo.png</texture>
-
 			</control>
+			
+			<control type="rss" id="1">
+				 <description>enigma rssfeed</description>
+				 <posx>80</posx>
+				 <posy>60</posy>
+				 <width>500</width>
+				 <visible>true</visible>
+				 <font>font14</font>
+				 <textcolor>FFB2D4F5</textcolor>
+				 <headlinecolor>FFFFFFFF</headlinecolor>
+				 <titlecolor>FF655656</titlecolor>
+			</control>
+			
+			<rssfeeds>
+			    <set id="1">
+					<feed updateinterval="30">http://www.cnet.com/rss/news/</feed>
+			    </set>
+			</rssfeeds>
 			
 			<control type="button" id="5555">
 				<description>Search image</description>
-				<ondown>8000</ondown>
-				<posx>1100</posx>
-				<posy>30</posy>
-				<width>50</width>
+				<onup>8000</onup>
+				<posx>500</posx>
+				<posy>600</posy>
+				<width>210</width>
 				<height>50</height>
 				<visible>true</visible>
 				<fadetime>200</fadetime>
-				<texturefocus>search_icon_glow.png</texturefocus>
+				<animation effect="zoom" end="110" center="500,500" time="200">Focus</animation>
+				<texturefocus>search_icon.png</texturefocus>
 				<texturenofocus>search_icon.png</texturenofocus>
 				<aspectratio>keep</aspectratio>
 			</control>
 						
 			<control type="button" id="8000">
 				<onright>8001</onright>
-				<onup>5555</onup>
+				<ondown>5555</ondown>
 				<left>50</left>
-				<top>200</top>
-				<width>225</width>
-				<height>400</height>
+				<top>175</top>
+				<width>260</width>
+				<height>350</height>
 				<texturefocus>movie_image.png</texturefocus>
 				<texturenofocus>movie_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="275,360" time="200">Focus</animation>
-				<font>font24_title</font>
+				<font>font13</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textoffsety>307</textoffsety>
+				<textoffsety>285</textoffsety>
 				<!--<onclick></onclick>-->
-				<label>Movie</label>
+				<label>MOVIES</label>
 			</control>
 			
 			<control type="button" id="8001">
 				<onright>8002</onright>
 				<onleft>8000</onleft>
-				<onup>5555</onup>
+				<ondown>5555</ondown>
 				<left>275</left>
-				<top>200</top>
-				<width>225</width>
-				<height>400</height>
+				<top>175</top>
+				<width>260</width>
+				<height>350</height>
 				<texturefocus>tvshow_image.png</texturefocus>
 				<texturenofocus>tvshow_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="460,360" time="200">Focus</animation>
-				<font>font24_title</font>
+				<font>font13</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textoffsety>307</textoffsety>
-				<label>TV Shows</label>
+				<textoffsety>285</textoffsety>
+				<label>TV SHOWS</label>
 			</control>
 			
 			<control type="button" id="8002">
 				<onright>8003</onright>
 				<onleft>8001</onleft>
-				<onup>5555</onup>
+				<ondown>5555</ondown>
 				<left>500</left>
-				<top>200</top>
-				<width>225</width>
-				<height>400</height>
+				<top>175</top>
+				<width>260</width>
+				<height>350</height>
 				<texturefocus>livetv_image.png</texturefocus>
 				<texturenofocus>livetv_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="680,360" time="200">Focus</animation>
-				<font>font24_title</font>
+				<font>font13</font>
 				<shadowcolor>ff000000</shadowcolor>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textoffsety>307</textoffsety>
-				<label>Live TV</label>
+				<textoffsety>285</textoffsety>
+				<label>LIVE TV</label>
 			</control>
 			
 			<control type="button" id="8003">
 				<onright>8004</onright>
 				<onleft>8002</onleft>
-				<onup>5555</onup>
+				<ondown>5555</ondown>
 				<left>725</left>
-				<top>200</top>
-				<width>225</width>
-				<height>400</height>
+				<top>175</top>
+				<width>260</width>
+				<height>350</height>
 				<texturefocus>music_image.png</texturefocus>
 				<texturenofocus>music_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="890,360" time="200">Focus</animation>
-				<font>font24_title</font>
+				<font>font13</font>
 				<shadowcolor>ff000000</shadowcolor>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textoffsety>307</textoffsety>
-				<label>Music</label>
+				<textoffsety>285</textoffsety>
+				<label>MUSIC</label>
 			</control>
 			
 			<control type="button" id="8004">
 				<onright>8005</onright>
 				<onleft>8003</onleft>
-				<onup>5555</onup>
+				<ondown>5555</ondown>
 				<left>950</left>
-				<top>200</top>
-				<width>225</width>
-				<height>400</height>
+				<top>175</top>
+				<width>260</width>
+				<height>350</height>
 				<texturefocus>setting_image.png</texturefocus>
 				<texturenofocus>setting_image.png</texturenofocus>
 				<animation effect="zoom" end="120" center="1020,360" time="200">Focus</animation>
-				<font>font24_title</font>
+				<font>font13</font>
 				<shadowcolor>ff000000</shadowcolor>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textoffsety>307</textoffsety>
-				<label>Settings</label>
+				<textoffsety>285</textoffsety>
+				<label>ENIGMA CORE</label>
 			</control>
 			
 			<!--<control type="fixedlist" id="9000">

@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
+	<fontset id="Default" idloc="31390" unicode="true">
+		<font>
+			<name>font10</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>64</size>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>12</size>
+		</font>
+		<font>
+			<name>font13</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>font14</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>font16</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>23</size>
+		</font>
+		<font>
+			<name>font30</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
+			<name>fontContextMenu</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>16</size>
+		</font>
+	
 	<fontset id="Arial" idloc="31392" unicode="true"> 
 		<!-- Arial Font better for non English -->
 		<font>

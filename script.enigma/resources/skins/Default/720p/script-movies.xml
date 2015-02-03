@@ -28,19 +28,19 @@
 				<width>234</width>
 				<height>80</height>
 				<texture>enigma_logo.png</texture>
-
 			</control>
 			
 			<control type="button" id="5555">
 				<description>Search image</description>
-				<ondown>8000</ondown>
-				<posx>1100</posx>
-				<posy>30</posy>
-				<width>50</width>
+				<onup>8000</onup>
+				<posx>500</posx>
+				<posy>600</posy>
+				<width>210</width>
 				<height>50</height>
 				<visible>true</visible>
 				<fadetime>200</fadetime>
-				<texturefocus>search_icon_glow.png</texturefocus>
+				<animation effect="zoom" end="105" center="310,360" time="200">Focus</animation>
+				<texturefocus>search_icon.png</texturefocus>
 				<texturenofocus>search_icon.png</texturenofocus>
 				<aspectratio>keep</aspectratio>
 			</control>
