@@ -25,28 +25,38 @@
 				<description>page header tab icon</description>
 				<posx>20</posx>
 				<posy>20</posy>
-				<width>234</width>
-				<height>80</height>
+				<width>200</width>
+				<height>90</height>
 				<texture>enigma_logo.png</texture>
 			</control>
 			
-			<control type="rss" id="1">
-				 <description>enigma rssfeed</description>
-				 <posx>80</posx>
-				 <posy>60</posy>
-				 <width>500</width>
-				 <visible>true</visible>
-				 <font>font14</font>
-				 <textcolor>FFB2D4F5</textcolor>
-				 <headlinecolor>FFFFFFFF</headlinecolor>
-				 <titlecolor>FF655656</titlecolor>
+			<control type="button" id="4444">
+				<description>News image</description>
+				<onup>5555</onup>
+				<ondown>8000</ondown>
+				<posx>1175</posx>
+				<posy>22</posy>
+				<width>60</width>
+				<height>60</height>
+				<visible>true</visible>
+				<fadetime>200</fadetime>
+				<animation effect="zoom" end="110" center="1100,100" time="200">Focus</animation>
+				<texturefocus>news_image.png</texturefocus>
+				<texturenofocus>news_image.png</texturenofocus>
+				<aspectratio>keep</aspectratio>
 			</control>
 			
-			<rssfeeds>
-			    <set id="1">
-					<feed updateinterval="30">http://www.cnet.com/rss/news/</feed>
-			    </set>
-			</rssfeeds>
+			<!--<control type="rss" id="7000">
+				<description>enigma rssfeed</description>
+				<posx>80</posx>
+				<posy>675</posy>
+				<width>1200</width>
+				<visible>true</visible>
+				<font>font12</font>
+				<textcolor>FFB2D4F5</textcolor>
+				<headlinecolor>FFFFFFFF</headlinecolor>
+				<titlecolor>FF655656</titlecolor>
+			</control>-->
 			
 			<control type="button" id="5555">
 				<description>Search image</description>
@@ -66,6 +76,7 @@
 			<control type="button" id="8000">
 				<onright>8001</onright>
 				<ondown>5555</ondown>
+				<onup>4444</onup>
 				<left>50</left>
 				<top>175</top>
 				<width>260</width>
@@ -87,6 +98,7 @@
 				<onright>8002</onright>
 				<onleft>8000</onleft>
 				<ondown>5555</ondown>
+				<onup>4444</onup>
 				<left>275</left>
 				<top>175</top>
 				<width>260</width>
@@ -107,6 +119,7 @@
 				<onright>8003</onright>
 				<onleft>8001</onleft>
 				<ondown>5555</ondown>
+				<onup>4444</onup>
 				<left>500</left>
 				<top>175</top>
 				<width>260</width>
@@ -127,6 +140,7 @@
 				<onright>8004</onright>
 				<onleft>8002</onleft>
 				<ondown>5555</ondown>
+				<onup>4444</onup>
 				<left>725</left>
 				<top>175</top>
 				<width>260</width>
@@ -147,6 +161,7 @@
 				<onright>8005</onright>
 				<onleft>8003</onleft>
 				<ondown>5555</ondown>
+				<onup>4444</onup>
 				<left>950</left>
 				<top>175</top>
 				<width>260</width>
