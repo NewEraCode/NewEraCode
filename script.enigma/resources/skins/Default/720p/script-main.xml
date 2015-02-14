@@ -90,7 +90,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<textoffsety>285</textoffsety>
-				<!--<onclick></onclick>-->
+				<!--<onclick>XBMC.ActivateWindow(1101)</onclick>-->
 				<label>MOVIES</label>
 			</control>
 			
