@@ -99,7 +99,7 @@ class Main_Menu(xbmcgui.WindowXML):
                                 w = Main_Menu("script-movie.xml" , __addon__.getAddonInfo('path'), "Default")
                                 w.doModal()
                                 del w
-                        elif self.getFocusId() == 8001:
+                        elif self.getFocusId() == 8005:
                                 w = Main_Menu("script-tvshows.xml" , __addon__.getAddonInfo('path'), "Default")
                                 w.doModal()
                                 del w
@@ -113,6 +113,18 @@ class Main_Menu(xbmcgui.WindowXML):
                                 del w
                         elif self.getFocusId() == 8004:
                                 w = Main_Menu("script-settings.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 9000:
+                                w = Main_Menu("script-primewire_movie.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 10000:
+                                w = Main_Menu("script-primewire_movielist_featured.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 600:
+                                w = Main_Menu("script-main.xml" , __addon__.getAddonInfo('path'), "Default")
                                 w.doModal()
                                 del w
                                 
@@ -145,6 +157,18 @@ class Main_Menu(xbmcgui.WindowXML):
                                 del w
                         elif self.getFocusId() == 8004:
                                 w = Main_Menu("script-settings.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 9000:
+                                w = Main_Menu("script-primewire_movie.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 10000:
+                                w = Main_Menu("script-primewire_movielist_featured.xml" , __addon__.getAddonInfo('path'), "Default")
+                                w.doModal()
+                                del w
+                        elif self.getFocusId() == 600:
+                                w = Main_Menu("script-main.xml" , __addon__.getAddonInfo('path'), "Default")
                                 w.doModal()
                                 del w
 

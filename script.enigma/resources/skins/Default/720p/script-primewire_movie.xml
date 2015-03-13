@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<window>
+	<defaultcontrol>702</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<!--<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture border="40">background-panel.png</texture>
+			</control>-->
+			<!-- ** Required ** Do not change <id> or <type> -->
+
+			<!--<control type="image">
+				<description>page header tab icon</description>
+				<posx>20</posx>
+				<posy>20</posy>
+				<width>234</width>
+				<height>80</height>
+				<texture>enigma_logo.png</texture>
+			</control>-->
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>$INFO[Container(702).ListItem.Art(fanart)]</texture>
+			</control>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible allowhiddenfocus="true">Control.HasFocus(703)</visible>
+				<texture>$INFO[Container(703).ListItem.Art(fanart)]</texture>
+			</control>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>shadow_full.png</texture>
+			</control>
+			
+			<!--<control type="button">
+				<posx>400</posx>
+				<posy>400</posy>
+				<width>375</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<visible>Control.HasFocus(702)</visible>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus></texturefocus>
+				<texturenofocus></texturenofocus>
+				<label>Loading Please wait!</label>
+			</control>-->
+			
+			<control type="button" id="600">
+				<ondown>702</ondown>
+				<description>page header tab icon</description>
+				<posx>30</posx>
+				<posy>0</posy>
+				<width>50</width>
+				<height>100</height>
+				<onclick>ActivateWindow(videofiles,plugin://script.enigma,return)</onclick>
+				<texturefocus colordiffuse="FFFFAAFF">title_logo.png</texturefocus>
+				<texturenofocus>title_logo.png</texturenofocus>
+			</control>
+			
+			<control type="button" id="5555">
+				<description>Search image</description>
+				<onup>702</onup>
+				<posx>50</posx>
+				<posy>640</posy>
+				<width>210</width>
+				<height>50</height>
+				<visible>true</visible>
+				<fadetime>200</fadetime>
+				<shadowcolor>FF000000</shadowcolor>
+				<animation effect="zoom" end="105" center="310,360" time="200">Focus</animation>
+				<texturefocus>enigma_search_icon.png</texturefocus>
+				<texturenofocus>enigma_search_icon.png</texturenofocus>
+				<aspectratio>keep</aspectratio>
+			</control>
+			
+			<control type="label">
+				<posx>800</posx>
+				<posy>50</posy>
+				<width>375</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<visible allowhiddenfocus="true">Control.HasFocus(702)</visible>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>left</align>
+				<aligny>left</aligny>
+				<label>$INFO[Container(702).ListItem.Label]</label>
+			</control>
+			
+			<control type="label">
+				<posx>800</posx>
+				<posy>50</posy>
+				<width>375</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<visible allowhiddenfocus="true">Control.HasFocus(703)</visible>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>left</align>
+				<aligny>left</aligny>
+				<label>$INFO[Container(703).ListItem.Label]</label>
+			</control>
+			
+			<control type="label">
+				<posx>800</posx>
+				<posy>75</posy>
+				<width>375</width>
+				<height>30</height>
+				<font>font10_title</font>
+				<textcolor>orange</textcolor>
+				<visible allowhiddenfocus="true">Control.HasFocus(702)</visible>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>left</align>
+				<aligny>left</aligny>
+				<label>$INFO[Container(702).ListItem.RatingAndVotes] [COLOR white] [/COLOR] $INFO[Container(702).ListItem.Mpaa]</label>
+			</control>
+			
+			<control type="label">
+				<posx>800</posx>
+				<posy>75</posy>
+				<width>375</width>
+				<height>30</height>
+				<font>font10_title</font>
+				<textcolor>orange</textcolor>
+				<visible allowhiddenfocus="true">Control.HasFocus(703)</visible>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>left</align>
+				<aligny>left</aligny>
+				<label>$INFO[Container(703).ListItem.RatingAndVotes] [COLOR white] [/COLOR] $INFO[Container(703).ListItem.Mpaa]</label>
+			</control>
+			
+			<control type="textbox">
+				<posx>800</posx>
+				<posy>100</posy>
+				<width>300</width>
+				<height>300</height>
+				<font>font10_title</font>
+				<textcolor>white</textcolor>
+				<visible allowhiddenfocus="true">Control.HasFocus(702)</visible>
+				<align>left</align>
+				<aligny>left</aligny>
+				<shadowcolor>FF000000</shadowcolor>
+				<autoscroll delay="3000" time="1000" repeat="10000">Control.HasFocus(702)</autoscroll>
+				<label>$INFO[Container(702).ListItem.Plot]</label>
+			</control>
+			
+			<control type="textbox">
+				<posx>800</posx>
+				<posy>100</posy>
+				<width>300</width>
+				<height>300</height>
+				<font>font10_title</font>
+				<textcolor>white</textcolor>
+				<visible allowhiddenfocus="true">Control.HasFocus(703)</visible>
+				<align>left</align>
+				<aligny>left</aligny>
+				<shadowcolor>FF000000</shadowcolor>
+				<autoscroll delay="3000" time="1000" repeat="10000">Control.HasFocus(703)</autoscroll>
+				<label>$INFO[Container(703).ListItem.Plot]</label>
+			</control>
+			
+			<!--<control type="button" id="700">
+				<description>test</description>
+				<left>165</left>
+				<top>195</top>
+				<ondown>702</ondown>
+				<width>auto</width>
+				<height>30</height>
+				<visible>true</visible>
+				<fadetime>200</fadetime>
+				<shadowcolor>FF000000</shadowcolor>				
+				<onclick>ActivateWindow(videofiles,$INFO[Container(702).ListItem.FileNameAndPath],return)</onclick>
+				<aspectratio>keep</aspectratio>
+				<label>Press Play</label>
+			</control>-->
+			
+			<control type="fixedlist" id="702">
+				<description>Primewire Featured</description>
+				<left>-125</left>
+				<top>400</top>
+				<width>4000</width>
+				<height>4000</height>
+				<onup>600</onup>
+				<ondown>703</ondown>
+				<visible allowhiddenfocus="true">Control.HasFocus(702)</visible>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<focusposition>1</focusposition>
+				<movement>1</movement>
+				<orientation>horizontal</orientation>
+				<content>plugin://plugin.video.1channel/?sort=featured&section=movie&mode=GetFilteredResults</content>
+				<itemlayout height="320" width="320">
+					<control type="image">
+						<left>150</left>
+						<top>0</top>
+						<width>300</width>
+						<height>200</height>
+						<texture>$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					<control type="image">
+						<left>150</left>
+						<top>200</top>
+						<width>300</width>
+						<height>200</height>
+						<texture background="true" flipy="true" diffuse="Poster_Matte_NF_Reflect.png">$INFO[ListItem.Art(fanart)]</texture>
+						<fadetime>200</fadetime>
+						<!--<colordiffuse>PosterDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">stretch</aspectratio>-->
+					</control>
+				</itemlayout>
+				<focusedlayout height="320" width="320">
+					<control type="image">
+						<left>150</left>
+						<top>0</top>
+						<width>300</width>
+						<height>200</height>
+						<texture>$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					<control type="image">
+						<left>150</left>
+						<top>200</top>
+						<width>300</width>
+						<height>200</height>
+						<texture background="true" flipy="true" diffuse="Poster_Matte_NF_Reflect.png">$INFO[ListItem.Art(fanart)]</texture>
+						<fadetime>200</fadetime>
+						<!--<colordiffuse>PosterDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">stretch</aspectratio>-->
+					</control>
+					<control type="image">
+						<left>140</left>
+						<top>-10</top>
+						<width>320</width>
+						<height>220</height>
+						<texture>white_border.png</texture>
+					</control>
+					<control type="label">
+						<left>165</left>
+						<top>195</top>
+						<width>275</width>
+						<height>30</height>
+						<font>font10_title</font>
+						<textcolor>white</textcolor>
+						<visible>true</visible>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			
+			<control type="fixedlist" id="703">
+				<description>Primewire Most Popular</description>
+				<left>-125</left>
+				<top>400</top>
+				<width>4000</width>
+				<height>4000</height>
+				<onup>702</onup>
+				<ondown>5555</ondown>
+				<visible allowhiddenfocus="true">Control.HasFocus(703)</visible>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<focusposition>1</focusposition>
+				<movement>1</movement>
+				<orientation>horizontal</orientation>
+				<content>plugin://plugin.video.1channel/?sort=views&section=movie&mode=GetFilteredResults</content>
+				<itemlayout height="320" width="320">
+					<control type="image">
+						<left>150</left>
+						<top>0</top>
+						<width>300</width>
+						<height>200</height>
+						<texture>$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					<control type="image">
+						<left>150</left>
+						<top>200</top>
+						<width>300</width>
+						<height>200</height>
+						<texture background="true" flipy="true" diffuse="Poster_Matte_NF_Reflect.png">$INFO[ListItem.Art(fanart)]</texture>
+						<fadetime>200</fadetime>
+						<!--<colordiffuse>PosterDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">stretch</aspectratio>-->
+					</control>
+				</itemlayout>
+				<focusedlayout height="320" width="320">
+					<control type="image">
+						<left>150</left>
+						<top>0</top>
+						<width>300</width>
+						<height>200</height>
+						<texture>$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					<control type="image">
+						<left>150</left>
+						<top>200</top>
+						<width>300</width>
+						<height>200</height>
+						<texture background="true" flipy="true" diffuse="Poster_Matte_NF_Reflect.png">$INFO[ListItem.Art(fanart)]</texture>
+						<fadetime>200</fadetime>
+						<!--<colordiffuse>PosterDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">stretch</aspectratio>-->
+					</control>
+					<control type="image">
+						<left>140</left>
+						<top>-10</top>
+						<width>320</width>
+						<height>220</height>
+						<texture>white_border.png</texture>
+					</control>
+					<control type="label">
+						<left>165</left>
+						<top>195</top>
+						<width>275</width>
+						<height>30</height>
+						<font>font10_title</font>
+						<textcolor>white</textcolor>
+						<visible>true</visible>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</controls>
+</window>

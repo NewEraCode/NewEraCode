@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <includes>
-	<include file="script-livetv.xml"/>
-	<include file="script-movies.xml"/>
-	<include file="script-music.xml"/>
-	<include file="script-settings.xml"/>
-	<include file="script-tvshows.xml"/>
-		
+	<include name="fanartbackground">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>Control.HasFocus(702)</visible>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+		</control>
+	</include>
+	<include name="test">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton1))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton1)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton1))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton1))</visible>
+		</item>
+	</include>
 </includes>

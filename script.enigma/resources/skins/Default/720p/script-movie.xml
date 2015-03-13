@@ -17,7 +17,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture border="40">background-panel.png</texture>
+				<texture border="40">enigma_background-panel.png</texture>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> -->
 
@@ -40,8 +40,8 @@
 				<visible>true</visible>
 				<fadetime>200</fadetime>
 				<animation effect="zoom" end="105" center="310,360" time="200">Focus</animation>
-				<texturefocus>search_icon.png</texturefocus>
-				<texturenofocus>search_icon.png</texturenofocus>
+				<texturefocus>enigma_search_icon.png</texturefocus>
+				<texturenofocus>enigma_search_icon.png</texturenofocus>
 				<aspectratio>keep</aspectratio>
 			</control>
 						

@@ -17,7 +17,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture border="40">background-panel.png</texture>
+				<texture border="40">enigma_background-panel.png</texture>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> -->
 
@@ -61,19 +61,138 @@
 			<control type="button" id="5555">
 				<description>Search image</description>
 				<onup>8000</onup>
-				<posx>500</posx>
-				<posy>600</posy>
+				<posx>50</posx>
+				<posy>640</posy>
 				<width>210</width>
 				<height>50</height>
 				<visible>true</visible>
 				<fadetime>200</fadetime>
-				<animation effect="zoom" end="110" center="500,500" time="200">Focus</animation>
-				<texturefocus>search_icon.png</texturefocus>
-				<texturenofocus>search_icon.png</texturenofocus>
+				<shadowcolor>FF000000</shadowcolor>
+				<animation effect="zoom" end="105" center="310,360" time="200">Focus</animation>
+				<texturefocus>enigma_search_icon.png</texturefocus>
+				<texturenofocus>enigma_search_icon.png</texturenofocus>
 				<aspectratio>keep</aspectratio>
 			</control>
-						
-			<control type="button" id="8000">
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>[Container(8000).HasFocus(1) | Container(8000).HasFocus(2) | Container(8000).HasFocus(3) | Container(8000).HasFocus(4) | Container(8000).HasFocus(5) | Container(8000).HasFocus(6)] + [!Control.HasFocus(5555) + !Control.HasFocus(4444)]</visible>
+				<texture>shadebackground.png</texture>
+			</control>
+			
+
+			<!-- Main List -->
+			
+			<control type="wraplist" id="8000">
+				<description>Main List</description>
+				<left>-50</left>
+				<top>25</top>
+				<width>4000</width>
+				<height>4000</height>
+				<ondown>5555</ondown>
+				<onup>4444</onup>
+				<visible>true</visible>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<focusposition>1</focusposition>
+				<movement>1</movement>
+				<orientation>horizontal</orientation>
+				<itemlayout height="360" width="200">
+					<control type="image">
+						<left>50</left>
+						<top>175</top>
+						<width>260</width>
+						<height>350</height>
+						<texture colordiffuse="FF969096">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<left>50</left>
+						<top>460</top>
+						<width>260</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>ff000000</shadowcolor>
+						<align>center</align>
+						<label colordiffuse="FF969096">$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="360" width="200">
+					<!--<control type="image">
+						<left>50</left>
+						<top>175</top>
+						<width>260</width>
+						<height>350</height>
+						<texture>shine.png</texture>
+					</control>-->
+					<control type="image">
+						<left>50</left>
+						<top>175</top>
+						<width>260</width>
+						<height>350</height>
+						<animation effect="zoom" end="135" center="200,360" time="200">Focus</animation>
+						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<left>50</left>
+						<top>460</top>
+						<width>260</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>ff000000</shadowcolor>
+						<align>center</align>
+						<animation effect="zoom" end="135" center="200,360" time="200">Focus</animation>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>MOVIES</label>
+						<icon>movie_image.png</icon>
+						<thumb>movie_image.png</thumb>
+						<onclick>-</onclick>
+						<visible>true</visible>
+					</item>
+					<item id="2">
+						<label>TV SHOWS</label>
+						<icon>tvshow_image.png</icon>
+						<thumb>tvshow_image.png</thumb>
+						<onclick>-</onclick>
+					</item>
+					<item id="3">
+						<label>LIVE TV</label>
+						<icon>livetv_image.png</icon>
+						<thumb>livetv_image.png</thumb>
+						<onclick>-</onclick>
+						<visible>true</visible>
+					</item>
+					<item id="4">
+						<label>MUSIC</label>
+						<icon>music_image.png</icon>
+						<thumb>music_image.png</thumb>
+						<onclick>-</onclick>
+					</item>
+					<item id="5">
+						<label>ENIGMA CORE</label>
+						<icon>setting_image.png</icon>
+						<thumb>setting_image.png</thumb>
+						<onclick>-</onclick>
+						<visible>true</visible>
+					</item>
+					<item id="6">
+						<label>PLAYLIST</label>
+						<icon>setting_image.png</icon>
+						<thumb>setting_image.png</thumb>
+						<onclick>-</onclick>
+						<visible>true</visible>
+					</item>
+				</content>
+			</control>
+
+			
+			<!--<control type="button" id="8000">
 				<onright>8001</onright>
 				<ondown>5555</ondown>
 				<onup>4444</onup>
@@ -90,7 +209,6 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<textoffsety>285</textoffsety>
-				<!--<onclick>XBMC.ActivateWindow(1101)</onclick>-->
 				<label>MOVIES</label>
 			</control>
 			
@@ -112,6 +230,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<textoffsety>285</textoffsety>
+				<onclick>ActivateWindow(script-tvshows.xml)</onclick>
 				<label>TV SHOWS</label>
 			</control>
 			
@@ -178,7 +297,7 @@
 				<label>ENIGMA CORE</label>
 			</control>
 			
-			<!--<control type="fixedlist" id="9000">
+			<control type="fixedlist" id="9000">
 				<left>-300</left>
 				<top>500</top>
 				<width>1900</width>
